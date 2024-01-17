@@ -1,0 +1,45 @@
+// Start Footer Section 
+footer {
+  padding: 5rem 0 1.25rem;
+  text-align: center;
+  background-color: #f2f2f2;
+
+  p {
+    text-align: start;
+    max-width: 48.875rem;
+    margin: auto;
+    margin-bottom: 9.375rem;
+    font-size: 0.75rem;
+  }
+
+  h3 {
+    font-size: 1.125rem;
+  }
+
+  .social_media_link {
+    gap: 3px;
+    margin: 2rem 0 5rem;
+
+    li {
+      a {
+        width: 3rem;
+        height: 3.125rem;
+        border: 0.0625rem solid $heading_color;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.25rem;
+        color: $heading_color;
+      }
+    }
+  }
+
+  .copyright {
+    a {
+      color: #1e73be;
+    }
+  }
+}
+
+// End Footer Section

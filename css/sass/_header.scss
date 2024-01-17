@@ -1,0 +1,52 @@
+// Start Header
+header {
+  .navbar_1 {
+    background-color: #2d2d2d;
+    height: 2.625rem;
+
+    .social_media {
+      gap: 1rem;
+
+      @include breakpoints(small) {
+        display: none !important;
+      }
+
+      li {
+        a {
+          color: #e0e0e0;
+          font-size: 1.0625rem;
+        }
+      }
+    }
+  }
+
+  .navbar_2 {
+    height: 5.9375rem;
+    padding: 0.9375rem 0;
+    box-shadow: 0 0 0.1875rem 0 rgba(0, 0, 0, 0.22);
+
+    .logo {
+      img {
+        width: 3.625rem;
+      }
+    }
+
+    .cta_btn {
+      background-color: $cta_btn_color;
+      border-radius: 2rem;
+      padding: 0.25rem 1rem;
+      font-family: $kufi;
+      color: rgba(255, 255, 255, .85);
+      transition: $transition;
+
+      &:hover {
+        background-color: #42aeed;
+        color: #fff;
+      }
+    }
+  }
+
+
+}
+
+// End Header

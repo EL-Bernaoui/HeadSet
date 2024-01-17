@@ -1,0 +1,41 @@
+// Start Hero section
+.hero {
+  padding-bottom: 40px;
+
+  .box_info {
+    margin-top: 4.375rem;
+    margin-bottom: 2.5rem;
+
+    p {
+      max-width: 80%;
+      margin: 1rem auto 1.5rem;
+    }
+
+    .hero_btn {
+      background-color: #fff;
+      border: 0.125rem solid $cta_btn_color;
+      color: $cta_btn_color;
+      padding: 0.5rem 2.6875rem;
+      border-radius: 2rem;
+      width: 12.1875rem;
+      transition: $transition;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, .05);
+        border-color: transparent;
+      }
+    }
+  }
+
+  .box_image {
+    img {
+      max-width: 85%;
+
+      @include breakpoints(small) {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+// End Hero section

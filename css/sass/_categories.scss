@@ -1,0 +1,25 @@
+// Start Categories Section
+.categories {
+  padding: 130px 0 70px;
+
+  @include breakpoints(medium) {
+    padding-top: 70px;
+  }
+
+  h2 {
+    font-size: 2.625rem;
+    font-weight: normal;
+  }
+
+  p {
+    max-width: 50rem;
+    margin: auto;
+    margin-bottom: 3.125rem;
+  }
+
+  img {
+    max-width: 85%;
+  }
+}
+
+// End Categories Section

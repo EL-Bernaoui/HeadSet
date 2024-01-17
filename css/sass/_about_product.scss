@@ -1,0 +1,118 @@
+// Start About Product Section
+.about_product {
+  background-color: #f2f2f2;
+  padding: 7.6rem 0;
+
+  @include breakpoints(large) {
+    padding-top: 4rem;
+  }
+
+  .preview_image {
+    background-color: rgba(0, 0, 0, 80%);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .7s ease, visibility 0.3s ease;
+
+    .holder {
+      width: max-content;
+      padding: 0 1rem;
+
+      .prv_close {
+        left: 1.25rem;
+        top: -2.8125rem;
+        font-size: 2.5rem;
+        color: #616161;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+
+    &.show {
+      opacity: 1;
+      visibility: visible;
+      z-index: 999;
+    }
+  }
+
+  .info {
+    margin-left: 1rem;
+
+    @include breakpoints(large) {
+      margin-left: 0;
+    }
+
+    h2 {
+      font-size: 2.625rem;
+
+      @include breakpoints(custom) {
+        font-size: 2.1875rem;
+      }
+    }
+
+    p {
+      margin: 1rem 0 2rem;
+    }
+
+    .more_info {
+      .box {
+        .icon {
+          width: 1rem;
+          height: 1rem;
+          background-color: #2d2d2d;
+          padding: 0.5rem;
+          color: #fff;
+          border-radius: 50%;
+        }
+
+        .description {
+          h4 {
+            font-size: 1.125rem;
+            margin-bottom: 0.625rem;
+          }
+
+          p {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .images {
+    margin-right: 1rem;
+
+    @include breakpoints(large) {
+      margin-right: 0;
+    }
+
+    .more {
+      margin-top: 10%;
+
+      @include breakpoints(small) {
+        flex-direction: column;
+      }
+
+      .more_imgs {
+        max-width: 45%;
+
+        @include breakpoints(small) {
+          max-width: 100%;
+
+          &:last-child {
+            margin-top: 10%;
+          }
+        }
+      }
+    }
+
+    .imgs {
+      cursor: pointer;
+    }
+  }
+
+}
+
+// End About Product Section

@@ -1,0 +1,99 @@
+// Start Advantage Section
+.advantage {
+  background-color: #282828;
+  color: #fff;
+  padding: 4.375rem 0;
+
+  @include breakpoints(large) {
+    padding-bottom: 2.5rem;
+  }
+
+
+  .first_box {
+    margin-left: 2rem;
+
+    @include breakpoints(large) {
+      margin-left: 0;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      font-size: 2.625rem;
+      color: #fff;
+
+      @include breakpoints(large) {
+        text-align: start;
+      }
+    }
+  }
+
+  p {
+    margin: 1rem 0 2.5rem;
+
+    @include breakpoints(large) {
+      text-align: start;
+    }
+  }
+
+
+  .second_box,
+  .third_box {
+    h3 {
+      font-size: 1.875rem;
+      color: #fff;
+    }
+
+    p {
+      margin: 1rem 0 0;
+    }
+
+    ul {
+      li {
+        list-style: square;
+        margin-right: 0.9375rem;
+      }
+    }
+
+    .categories_btn {
+      color: #282828;
+      margin: 3.125rem 0 0 auto !important;
+      width: 18.125rem;
+      max-width: 100%;
+      padding: 1.375rem 2.5rem;
+      border-radius: 4rem;
+      font-size: 1rem;
+      transition: $transition;
+
+      @include breakpoints(large) {
+        margin-top: 1.5rem !important;
+      }
+    }
+
+    .gift_btn {
+      background-color: $cta_btn_color;
+
+      &:hover {
+        background-color: #328ebe;
+      }
+    }
+
+    .nrml_btn {
+      background-color: #fff;
+
+      &:hover {
+        background-color: #dfdfdf;
+      }
+    }
+  }
+
+  .second_box {
+    margin-bottom: 6.25rem;
+
+    @include breakpoints(large) {
+      margin-bottom: 3.5rem;
+    }
+  }
+}
+
+// End Advantage Section

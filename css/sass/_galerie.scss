@@ -1,0 +1,31 @@
+// Start Galerie Section
+.galerie {
+  .row {
+    --bs-gutter-x: 0;
+
+    .box_info {
+
+      .info {
+        bottom: 1rem;
+        right: 2.5rem;
+
+        h5 {
+          font-size: 1.3125rem;
+          font-weight: bold;
+        }
+
+        a {
+          color: $cta_btn_color;
+        }
+
+        p {
+          margin-bottom: 0.375rem;
+          font-size: 0.78125rem;
+        }
+
+      }
+    }
+  }
+}
+
+// End Galerie Section
